@@ -1,0 +1,25 @@
+{
+  "name": "webcore_9.6",
+  "version": "1.0.0",
+  "description": "webcore 9.6",
+  "homepage": "https://github.com/1nottoday/webcore_9.6#readme",
+  "bugs": {
+    "url": "https://github.com/1nottoday/webcore_9.6/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1nottoday/webcore_9.6.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "build-css": "sass style.scss style css",
+    "watch-css": "sass --watch style.scss:style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "sass": "^1.101.3"
+  }
+}
