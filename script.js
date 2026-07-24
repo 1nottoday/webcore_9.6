@@ -16,15 +16,25 @@ button.addEventListener("click", () => {
 });
 
 
-const swiper = new Swiper(".swiper", {
-  slidesPerView: "auto",
-  spaceBetween: 16,
-  pagination: { el: ".swiper-pagination", type: "bullets" },
+const brandsSwiper = new Swiper("#brandsSwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 16,
+    pagination: {
+        el: "#brandsSwiper .swiper-pagination",
+        type: "bullets",
+        clickable: true,
+    },
 });
 
-const btn = document.getElementById('menu-btn');
-const menu = document.getElementById('sidebar');
-
-btn.addEventListener('click', () => {
-  menu.classList.toggle('open');
+const repairsSwiper = new Swiper("#repairsSwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 16,
+    pagination: {
+        el: "#repairsSwiper .swiper-pagination",
+        type: "bullets",
+        clickable: true,
+    },
 });
+
+/*const btn = document.getElementById('menu-btn');
+const menu = document.getElementById('sidebar');*/

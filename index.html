@@ -9,12 +9,12 @@
 </head>
 <body>
    <div class="container">
-        <div class="side" id="sidebar">
+        <div class="side">
         
             <header class="side_menu">
             
-                <span class="side_logo1" type="submit" id="menu-btn">
-                    <img class="side_logo" src="./images/burger.svg" alt="burger" width="40" height="40">
+                <span class="side_logo1" type="submit" id="sidebar">
+                    <img class="side_logo" src="./images/burger.svg" id="menu-btn" alt="burger" width="40" height="40">
                     <span class="group">
                        <img class="logo_1" src="./images/Group.svg" alt="group" width="96" height="51">
                     </span>
@@ -147,7 +147,7 @@
             <div class="header">
                 <h2 class="headline">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
             </div>
-         <div class="brands-grid" id="brandsGrid">
+        <div class="brands-grid" id="brandsGrid">
             <span class="brand-card">
                 <img class="brand-logo lenovo" src="./images/Lenovo.png" alt="Lenovo" />
                 <img class="arrow-button" src="./images/go.svg" />
@@ -209,13 +209,13 @@
             <span>Показать все</span>
         </button>
 
-        <div class="swiper">
+        <div class="swiper" id="brandsSwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img class="brand-logo lenovo" src="./images/Lenovo.png" alt="Lenovo" />
                     <img class="arrow-button" src="./images/go.svg" />
                 </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide" >
                 <img class="brand-logo samsung" src="./images/Samsung.png" alt="Samsung" />
                 <img class="arrow-button" src="./images/go.svg" />
             </div>
@@ -257,6 +257,42 @@
             </div>
         </div>
         <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="header add-on">
+                <h2 class="headline">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
+        </div>
+            <div class="add-on_repairs">
+                <div class="add-on_repairs-inside">Ремонт ноутбуков
+                    <img class="arrow-button" src="./images/go.svg" />
+                </div> 
+                <div class="add-on_repairs-inside">Ремонт планшетов
+                    <img class="arrow-button" src="./images/go.svg" />
+                </div>
+                <div class="add-on_repairs-inside">Ремонт ПК
+                    <img class="arrow-button" src="./images/go.svg" />
+                </div>   
+                <div class="add-on_repairs-inside">Ремонт мониторов
+                    <img class="arrow-button" src="./images/go.svg" />
+                </div>
+
+            </div>
+        <div class="swiper" id="repairsSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide add-on_repairs-inside">Ремонт ноутбуков
+                    <img class="arrow-button" src="./images/go.svg" />
+                </div> 
+                <div class="swiper-slide add-on_repairs-inside">Ремонт планшетов
+                    <img class="arrow-button" src="./images/go.svg" />
+                </div>
+                <div class="swiper-slide add-on_repairs-inside">Ремонт ПК
+                    <img class="arrow-button" src="./images/go.svg" />
+                </div>   
+                <div class="swiper-slide add-on_repairs-inside">Ремонт мониторов
+                    <img class="arrow-button" src="./images/go.svg" />
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
       <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>

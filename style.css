@@ -246,7 +246,7 @@ body {
     padding: 0;
     cursor: pointer;
     gap: 16px; 
-    background-color: #FFFFFF;
+    background: transparent;
 }
 .logotext_1 {
     display: none;
@@ -575,8 +575,8 @@ body {
   text-decoration: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
   transition:
-    transform 0.2s,
-    box-shadow 0.2s;
+  transform 0.2s,
+  box-shadow 0.2s;
 
 }
 .hidden-icon {
@@ -608,8 +608,14 @@ body {
   .brand-card.open.desktop {
     display: none;
   }
+  .add-on_repairs {
+    grid-template-columns: repeat(3, 224px);
+  }
 }
 @media (max-width: 767px) {
+   .add-on_repairs {
+    display: none;
+   }
    .side {
     position: fixed;
     left: -320px;
@@ -678,5 +684,31 @@ body {
     background-color: rgba(181, 182, 188, 1);
   }
   
+}
+.add-on_repairs {
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    gap: 16px 32px;
+    margin: 24px;
+    max-height: 288px;
+    overflow: hidden;
+    justify-content: center;
+    transition-duration: 200ms;
+}
+.add-on_repairs-inside {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #ffffff;
+   border: 1px solid #eaeaea;
+   border-radius: 6px;
+   padding: 16px;
+   text-decoration: none;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+   transition:
+   transform 0.2s,
+   box-shadow 0.2s;
+   height: 160px;
+   width: 240px;
 }
 
