@@ -15,8 +15,16 @@ button.addEventListener("click", () => {
   }
 });
 
+
 const swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
   spaceBetween: 16,
   pagination: { el: ".swiper-pagination", type: "bullets" },
+});
+
+const btn = document.getElementById('menu-btn');
+const menu = document.getElementById('sidebar');
+
+btn.addEventListener('click', () => {
+  menu.classList.toggle('open');
 });
