@@ -7,12 +7,13 @@
 * {
   box-sizing: border-box;
   font-family: "TTLakes";
-  background-color: #F8F8F8;
+  
 }
 body {
     min-width: 320px;
     width: 100%;
     margin: 0 auto;
+    background-color: #F8F8F8;
 }
 .container {
     display: flex;
@@ -195,11 +196,12 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
-    background-color: #FFFFFF;
+    background: transparent;
 }
 
 .logo_web2 {
     display: none;
+    background: transparent;
 }
 .divider1 {
     display: flex;
@@ -219,14 +221,14 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
-    background-color: #FFFFFF;
+    background: transparent;
 }
 .logo_web__23 {
     margin-left: auto;
     display: flex;
     justify-content: end;
     gap: 24px;
-    background-color: #FFFFFF;
+    background: transparent;
 }
 
 .logo {
@@ -252,7 +254,7 @@ body {
 .logotext_mobile1 {
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #FFFFFF;
+    
 }
 .body_menu {
     background-color: #F8F8F8;
@@ -337,6 +339,7 @@ body {
     color: #1b1c21;
     text-decoration: none;
     border: none;
+    background: transparent;
 }
  
 .picture_copy {
@@ -632,6 +635,7 @@ body {
     padding: 16px 16px 66px 16px;
     margin-bottom: 30px;
     min-width: 320px;
+    overflow: hidden;
   }
   .swiper-wrapper {
     display: flex;
@@ -650,13 +654,22 @@ body {
     max-width: 240px;
     flex-shrink: 0;
   }
-  .swiper-pagination-bullet {
+  .swiper-pagination {
+    position: relative;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.swiper-pagination-bullet {
     width: 12px;
     height: 12px;
-    background-color: #e0e0e0;
+    background-color: #d9d9d9;
     opacity: 1;
     margin: 0 6px !important;
-  }
+    display: inline-block;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
   .swiper-pagination-bullet:hover {
     background-color: rgba(181, 182, 188, 1);
     opacity: 1;
