@@ -616,6 +616,9 @@ body {
    .add-on_repairs {
     display: none;
    }
+   .add-on_repairs-inside {
+    display: none;
+   }
    .side {
     position: fixed;
     left: -320px;
